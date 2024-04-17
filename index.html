@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLUBS~jec</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clubs.html">
+    <link rel="stylesheet" href="Aavahan.html">
+    <link rel="stylesheet" href="footer.html">
+    <link rel="stylesheet" href="http://localhost/chatapp/ChatApp%20-%20CodingNepal/">
+</head>
+
+<body>
+    <header id="home">
+        <div class="logo">
+            <img src="LOGO.png">
+        </div>
+        <div class="header-text">
+            <h1>JABALPUR ENGINEERING COLLEGE</h1>
+            <h3>Gokalpur, Jabalpur (M.P.)</h3>
+        </div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="#contact">Contact</a>
+            <a href="http://localhost/chatapp/ChatApp%20-%20CodingNepal/">Login</a>
+            <div class="search-container">
+                <form action="search" method="GET">
+                  <input type="text" name="query" class="search-input" placeholder="Search...">
+                  <span class="search-icon"></span>  
+                </form>
+              </div>
+        </div>
+        <div class="head"><br />
+            <h1>CLUB~75</h1>
+        </div>
+    </header>
+    <div class="title" id="about">
+        <h1>About Us</h1>
+        <h3>Welcome to CLUB~75</h3>
+        <br />
+        <h2>The CLUB75, your ultimate destination for all things related to clubs, events, and activities at Jabalpur
+            Engineering College (JEC). As the official platform for the vibrant and dynamic community at JEC, CLUB75
+            aims to provide a comprehensive and centralized hub for students and alumni alike.<br />
+
+            <br />At CLUB75, we believe in the power of connection and collaboration. That's why we've created a
+            platform where authorized JEC students and alumni can come together to stay informed, engaged, and
+            connected. Whether you're looking to explore upcoming events, connect with fellow club members, or seek
+            guidance and support, CLUB75 has you covered.<br />
+
+            <br /> Our website features a user-friendly interface where you can easily browse through a wide range of
+            club events and activities happening within the college. From workshops and seminars to social gatherings
+            and competitions, you'll find all the latest happenings right here on our platform.<br />
+
+            <br />But CLUB~75 is more than just an events directory. It's a community-driven space where you can create
+            your profile, connect with peers, and engage in meaningful discussions. Our chat section provides a
+            real-time communication channel where you can ask questions, share insights, and connect with others who
+            share your interests.<br />
+
+            <br />Whether you're a current student looking to get involved in campus life or an alum eager to stay
+            connected with your alma mater, CLUB~75 welcomes you with open arms. Join us today and be a part of the
+            vibrant JEC community!
+        </h2>
+    </div>
+    <section class="sect">
+        <div class="rev-container">
+            <div class="box">
+                <div class="rev-img"><img src="c1.jpg" alt=""></div>
+                <h2>Clubs</h2>
+                <p>Finding club where you can explore, learn, grow, and make lasting memories. Get involved, meet new
+                    people, and embark on an enriching journey of self-discovery through our vibrant club community.</p>
+            </div>
+            <div class="box">
+                <div class="rev-img"><img src="act.png" alt=""></div>
+                <h2>Societies</h2>
+                <p>Societies play a crucial role in enhancing the holistic development of students by fostering personal
+                    growth, fostering connections, and providing opportunities for learning and engagement outside the
+                    classroom.</p>
+            </div>
+            <div class="box">
+                <div class="rev-img"><img src="event.png" alt=""></div>
+                <h2>Events</h2>
+                <p>College events come in many forms, including academic seminars, workshops, conferences, cultural
+                    celebrations, performances, social gatherings, sports competitions, charity fundraisers, career
+                    fairs, and more. The diversity of events reflects the multifaceted interests and needs of the
+                    student body</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="visit" id="contact">
+            <img src="LOGO.png" alt="">
+            <div class="contact">
+                <h3>Visit our official website<br><a href="#home">jabalpur-engineering-college</a></h3><br />
+                <h1>CONTACT US</h1><br />
+                <div class="add">
+                    <img src="pin.png" alt="">
+                    <h2>JEC, Gokalpur,Jabalpur,M.P</h2>
+                </div>
+                <div class="add">
+                    <img src="" alt="">
+                    <h2>91-761-2331953</h2>
+                </div>
+                <div class="add">
+                    <img src="" alt="">
+                    <h2>prinjec.jbp@mp.gov.in</h2>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</html>

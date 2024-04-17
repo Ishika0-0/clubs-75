@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aavahan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+        }
+
+        .navbar {
+            background-color: #4b3535;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            font-size: 17px;
+            height: 20px;
+        }
+
+        .navbar a:hover {
+            background-color: beige;
+            color: rgb(38, 37, 37);
+        }
+
+        .head {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .head h2 {
+            font-size: 50px;
+            text-align: center;
+            justify-content: center;
+            padding-left: 5vh;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .img {
+            align-items: center;
+            display: grid;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+
+        .img img {
+            width: 126%;
+            height: 90%;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            border: 4px solid black;
+        }
+
+        .content p {
+            text-align: justify;
+            color: #333;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .team h2,
+        .act h2 {
+            font-size: 30px;
+            align-items: center;
+            justify-content: center;
+            padding-left: 44vw;
+        }
+
+        .team h3 {
+            font-size: 22px;
+            align-items: center;
+            justify-content: center;
+            padding-left: 48vw;
+            font-weight: 300;
+        }
+
+        .block {
+            padding: 3vh 0;
+            padding-left: 30vh;
+        }
+
+        .act img {
+            height: 40%;
+            width: 40%;
+            object-fit: cover;
+            gap: 10px;
+        }
+
+        .more h3 {
+            text-align: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .more {
+            padding-bottom: 7vh;
+        }
+
+        .more img {
+            height: 30px;
+            width: 30px;
+            object-fit: cover;
+            padding-left: 45vw;
+        }
+
+        .s {
+            display: flex;
+            gap: 10px;
+        }
+
+        .more a {
+            padding-top: 3px;
+        }
+
+        .more a:hover {
+            text-decoration: underline;
+            color: rgb(222, 21, 222);
+        }
+        
+       .search-container {
+      float: right; 
+      margin-top: 10px; 
+      padding-right: 20px;
+    }
+
+    .search-input {
+      padding: 5px;
+      width: 200px; /* Adjust width as needed */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      padding-right: 35px;
+    }
+
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      transform: translateY(-50%);
+      width: 20px; /* Set the width of the icon */
+      height: 20px; /* Set the height of the icon */
+      background-image: url("search.png"); 
+      background-size: cover;
+      cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#activity">Activity</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/search" method="GET">
+              <input type="text" name="query" class="search-input" placeholder="Search...">
+              <span class="search-icon"></span>  
+            </form>
+          </div>
+
+    </div>
+    <br>
+    <!-- Title -->
+    <div class="head">
+        <h2>AAVAHAN</h2>
+    </div>
+    <!-- Content -->
+    <div class="img">
+        <img src="aavahan.jpg" alt="Aavahan Image">
+    </div>
+    <div class=content id="about">
+        <p>Aavahan, the annual sports fest organized at Jabalpur Engineering College (JEC) in Jabalpur, is a highly
+            anticipated event among students, faculty, and sports enthusiasts in the region. With a rich tradition
+            spanning several years, Aavahan showcases the spirit of sportsmanship, camaraderie, and competition.</p>
+        <p>The event typically features a diverse range of sports and athletic competitions, catering to participants
+            with varying interests and skill levels. From classic sports such as cricket, kabaddi, kho kho, volleyball,
+            basketball, table tennis, badminton, and athletics to futsal, Aavahan offers a platform for athletes to
+            showcase their talents and compete against their peers.</p>
+        <p>In addition to the competitive aspect, Aavahan fosters a sense of community and pride within the JEC campus.
+            It serves as an opportunity for students to come together, forge friendships, and support one another in
+            their athletic endeavors. The fest also encourages participation from faculty and staff, further enhancing
+            the sense of unity and collaboration within the college community.</p>
+        <p>Aavahan at Jabalpur Engineering College celebrates athleticism, teamwork, and the vibrant spirit of JEC.
+            Alongside the sporting events, the fest may feature cultural performances, entertainment acts, food stalls,
+            and other recreational activities, creating a festive atmosphere that resonates throughout the campus.</p>
+    </div>
+    <div class="team" id="team">
+        <h2>Teacher Advisor</h2>
+        <h3>abc sir</h3>
+    </div>
+    <div class="act" id="activity">
+        <h2>Activities</h2>
+        <div class="block">
+            <img src="aa.jpg" alt="">
+            <img src="aa2.jpg" alt="">
+            <img src="aa3.jpg" alt="">
+            <img src="aa4.jpg" alt="">
+        </div>
+    </div>
+    <div class="more">
+        <h3>know more</h3>
+        <div class="s">
+            <img src="instagram (1).png" alt="">
+            <a href="www.instagram.com">aavahan2k24</a>
+        </div>
+    </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

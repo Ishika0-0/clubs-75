@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+           .search-container {
+      float: right; 
+      margin-top: 10px; 
+      padding-right: 20px;
+    }
+
+    .search-input {
+      padding: 5px;
+      width: 200px; /* Adjust width as needed */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      padding-right: 35px;
+    }
+
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      transform: translateY(-50%);
+      width: 20px; /* Set the width of the icon */
+      height: 20px; /* Set the height of the icon */
+      background-image: url("search.png"); 
+      background-size: cover;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#activity">Activity</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/search" method="GET">
+              <input type="text" name="query" class="search-input" placeholder="Search...">
+              <span class="search-icon"></span>  
+            </form>
+          </div>
+
+    </div>
+</body>
+</html>
