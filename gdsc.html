@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDSC Jec</title>
+    <link rel="stylesheet" href ="style_for_pages.css"></style>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <div class="navbar">
+        <a href="index.html" target="blank">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#activity">Activity</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/search" method="GET">
+              <input type="text" name="query" class="search-input" placeholder="Search...">
+              <span class="search-icon"></span>  
+            </form>
+          </div>
+
+    </div>
+<br><br>
+        <div class="head">
+            <h2> Google Developer Student Club</h2>
+        </div>
+        <div class ="img">
+    <img src = "gdsc.png" height="300" width="300" >
+    </div>
+        <div class=content id="about">
+        <P>Google Developer Student Clubs are university-based community groups for students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. 
+
+            GDSC JEC is a technical club aiming to build a society where students from all fields, who are interested in tech and are intending to become developers can share ideas and put their heads together on exciting projects and solutions. 
+            
+            The main attributes that we are scrutinizing are curious minds and a desire to learn. The chief goal of this club is to stimulate and reinforce the development of projects that create reverberations. These reverberations will propel the club and inspire curious minds to push their limits and broaden their creativity to build future innovations. 
+            
+            This club not only intends to bolster coders with advanced skills but also provides a stage for students with non-technical backgrounds to dive into a new field, with accurate supervision and help promptly available to them.
+        </P>
+            <br>
+           </div>
+    <div class="content" id="team">
+        <h2>GDSC Lead</h2>
+        <ol>
+            <h3>
+            <li>Parnika Upadhyay
+            </li>
+            
+            
+        </h3>
+            <!-- Add more names as needed -->
+          </ol>
+          
+    </div>
+    
+    </div>
+    <div class="more">
+        <h3>To Know us more visit our website <a href= "https://gdsc.community.dev/jabalpur-engineering-college-jabalpur-india/" target= "blank">GDSCjec</a>
+           </h3>
+           
+
+        <div class="s">
+            <img src="instra logo.jpeg" alt="">
+            <a  href ="https://www.instagram.com/gdscjec/" target="blank ">GDSC jec</a>
+          </div>  
+          <br>
+          
+    </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+        <!-- <div w3-include-html="footer.html"></div> -->
+    <script>function loadNavbarAndFooter() {
+        var xhrFooter = new XMLHttpRequest();
+        xhrFooter.open("GET", "footer1.html", true);
+        xhrFooter.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("footer-placeholder").innerHTML = this.responseText;
+            }
+        };
+        xhrFooter.send();
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        loadNavbarAndFooter();
+    });</script>
+</html>

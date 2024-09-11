@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankuram Jec</title>
+    <link rel="stylesheet" href ="style_for_pages.css"></style>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <div class="navbar">
+        <a href="index.html" target="blank">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#activity">Activity</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/search" method="GET">
+              <input type="text" name="query" class="search-input" placeholder="Search...">
+              <span class="search-icon"></span>  
+            </form>
+          </div>
+
+    </div>
+<br><br>
+        <div class="head">
+            <h2> Ankuram</h2>
+        </div>
+        <div class ="img">
+    <img src = "Ankuram logo.jpg" height="300" width="300" >
+    </div>
+        <div class=content id="about">
+        <P>Welcome to Ankuram, where the spirit of entrepreneurship ignites and innovation takes center stage!
+
+            Ankuram is not just an event; it's a one-day carnival designed to kickstart your entrepreneurial journey. It all begins with the grand inauguration of the E-cell, the heartbeat of innovation at our institution. From there, get ready for a day packed with excitement, learning, and fun.
+            
+            Experience the thrill of fast-paced games that challenge your agility and strategic thinking. Test your knowledge and wit in fun and engaging quizzes that will leave you both entertained and enlightened. Explore the knowledgeable stalls of startups, where you'll discover groundbreaking ideas and interact with the minds behind them.
+        </P>
+            <br>
+           </div>
+    <div class="content" id="team">
+        <h2>Our Club Members </h2>
+        <ol>
+            <h3>
+            <li>Yukta Barkhane
+            </li>
+            <li>Udit Narayan sing</li>
+            <li>Akanksha mishra
+            </li>
+            
+        </h3>
+            <!-- Add more names as needed -->
+          </ol>
+          
+    </div>
+    <div class="act" id="activity">
+        <h2>Activities</h2>
+        <div class="block">
+            <img src="Ankuram1.jpg" height="100" width ="100" alt="">
+            <img src="Ankuram2.jpg" alt="">
+            <img src="Ankuram3.jpg" alt="">
+            <img src="Ankuram4.jpg" alt="">
+        </div>
+    </div>
+    <div class="more">
+        <h3>Join Us:<br>
+            "Join us at D'Coders JEC and be part of a movement that's shaping the future of technology and empowering students to turn their dreams into reality. Together, let's code, innovate, and inspire! "</h3>
+        <div class="s">
+            <img src="instra logo.jpeg" alt="">
+            <a  href ="https://www.instagram.com/ankuram_jec?igsh=MWZ2d202dGhqYTk3aA==" target="blank ">Ankuram</a>
+          </div>  
+          <br>
+          
+    </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+        <!-- <div w3-include-html="footer.html"></div> -->
+    <script>function loadNavbarAndFooter() {
+        var xhrFooter = new XMLHttpRequest();
+        xhrFooter.open("GET", "footer1.html", true);
+        xhrFooter.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("footer-placeholder").innerHTML = this.responseText;
+            }
+        };
+        xhrFooter.send();
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        loadNavbarAndFooter();
+    });</script>
+</html>

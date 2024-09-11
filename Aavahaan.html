@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jec AAVAHAN</title>
+    <link rel="stylesheet" href ="style_for_pages.css"></style>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <div class="navbar">
+        <a href="index.html" target="blank">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#activity">Activity</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/search" method="GET">
+              <input type="text" name="query" class="search-input" placeholder="Search...">
+              <span class="search-icon"></span>  
+            </form>
+          </div>
+
+    </div>
+
+    <!-- <div class = "title"><a href="index.html"><img src="home_FILL0_wght400_GRAD0_opsz24.png" alt="Home Icon"></div> -->
+    <!-- <div ><a href="C:\Users\patid\Downloads\6th sem\CLUBS~jec-20240402T224911Z-001\CLUBS~jec\index.html"></div> -->
+        <br><br>
+        <div class="head">
+            <h2>AAVAHAN</h2>
+        </div>
+        <div class ="img">
+    <img src = "aavahan.jpg" height="300" width="300" alt="Aavahan Image" >
+    </div>
+        <div class=content id="about">
+         <p>Aavahan, the annual sports fest organized at Jabalpur Engineering College (JEC) in Jabalpur, is a highly
+            anticipated event among students, faculty, and sports enthusiasts in the region. With a rich tradition
+            spanning several years, Aavahan showcases the spirit of sportsmanship, camaraderie, and competition.</p>
+        <p>The event typically features a diverse range of sports and athletic competitions, catering to participants
+            with varying interests and skill levels. From classic sports such as cricket, kabaddi, kho kho, volleyball,
+            basketball, table tennis, badminton, and athletics to futsal, Aavahan offers a platform for athletes to
+            showcase their talents and compete against their peers.</p>
+        <p>In addition to the competitive aspect, Aavahan fosters a sense of community and pride within the JEC campus.
+            It serves as an opportunity for students to come together, forge friendships, and support one another in
+            their athletic endeavors. The fest also encourages participation from faculty and staff, further enhancing
+            the sense of unity and collaboration within the college community.</p>
+        <p>Aavahan at Jabalpur Engineering College celebrates athleticism, teamwork, and the vibrant spirit of JEC.
+            Alongside the sporting events, the fest may feature cultural performances, entertainment acts, food stalls,
+            and other recreational activities, creating a festive atmosphere that resonates throughout the campus.</p></div>
+    <!-- <div class="content" id="team">
+        <h2>Jec Chess Players </h2>
+        <ol>
+            <h3><li>Sachi</li>
+            <li>Anish Shrivastava</li>
+            <li>Shivam Sing </li>
+            <li>Aman devaliya</li>
+            <li>Sudhanshu Tiwari</li>
+            <li>Ankit</li>
+            <li>Shivani Patidar</li>
+            <li>Shreyash Pawar</li>
+            <li>Abhinav Shrivas</li>
+            <li>Ruchi</li>
+            <li>Anshika Jain</li>
+            <li>Harshita Sahu</li>
+        </h3>
+            <!-- Add more names as needed -->
+          </ol>
+          
+    </div> -->
+    <div class="act" id="activity">
+        <h2>Activities</h2>
+        <div class="block">
+            <img src="aa.jpg" alt="">
+            <img src="aa2.jpg" alt="">
+            <img src="aa3.jpg" alt="">
+            <img src="aa4.jpg" alt="">
+        </div>
+    </div>
+    <div class="more">
+        <h3>Follow us for more...</h3>
+        <div class="s">
+            <img src="instra logo.jpeg" alt="">
+            <a  href ="hhttps://www.instagram.com/aavahan2k24/" target="blank ">Aavahaan</a>
+          </div>  
+          <br>
+          
+    </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+        <!-- <div w3-include-html="footer.html"></div> -->
+    <!-- <script>function loadNavbarAndFooter() {
+        var xhrFooter = new XMLHttpRequest();
+        xhrFooter.open("GET", "footer1.html", true);
+        xhrFooter.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("footer-placeholder").innerHTML = this.responseText;
+            }
+        };
+        xhrFooter.send();
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        loadNavbarAndFooter();
+    });</script> -->
+
+</html>

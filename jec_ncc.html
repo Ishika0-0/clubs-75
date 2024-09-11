@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jec Women Society</title>
+    <link rel="stylesheet" href ="style_for_pages.css">
+    <link rel="stylesheet" href="footer1.html">
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <div class="navbar">
+        <a href="index.html" target="blank">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#activity">Activity</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+        <br><br>
+        <div class="head">
+            <h2>JEC NATIONAL CADETS CORPS (NCC)</h2>
+        </div>
+        <div class ="img">
+    <img src = "jec ncc logo.jpg" height="250" width="250" >
+    </div>
+        <div class=content id="about">
+        <p>"The National Cadets Corps (NCC) platoons at JEC have consistently undertaken various activities to fulfill not only the basic requirements of NCC training but also to serve the needs of society and the nation at large.JEC's NCC unit is one of the four technical units in M.P. It consists of two platoons: EME and Engineers, each comprising 53 cadets.
+        The college offers training to the cadets under the Army Wing of the National Cadets Corps, led by Lt. Sunil Kumar Singh (Associate NCC Officer)."</p>
+    </div>
+    <div class="content" id="team">
+        <h2>Our Achievements:</h2>
+        <ul style=" font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <li>Combined Annual Training Camps: JEC hosted combined annual training camps on its campus with over 1000 cadets from M.P. participating, showcasing the strength and commitment of our cadets.</li>
+
+           <li> Sports and Adventure Activities: Events like Para-sailing, Tracking, etc., were organized to promote the overall growth and development of the cadets, instilling in them a spirit of adventure and camaraderie.</li>
+            
+            <li>Field Visits: Cadets were taken on visits to Army Base Workshop 506, providing them with real-time exposure to the functioning of machineries and equipment used by the Army, enriching their learning experience.</li>
+            
+            <Li>Training in Rifle Shooting and Self-Defense: Cadets received specialized training in rifle shooting and self-defense techniques, empowering them with essential skills for their personal and professional development.</Li></ul>
+            
+          
+    </div>
+    <div class="act" id="activity">
+        <h2>Activities</h2>
+        <div class="block">
+            <img src="j ncc 1.jpg"  alt="">
+            <img src="j ncc 2.jpg" alt="">
+            <img src="j ncc 3.jpg" alt="">
+            <img src="j ncc 4.jpg" alt="">
+        </div>
+    </div>
+    <div class="more">
+        <h3>Follow us for more...</h3>
+        <div class="s">
+            <img src="instagram (1).png" alt="">
+            <a  href ="https://www.instagram.com/jec.ncc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank ">jec ncc </a>
+          </div>  
+          <br>
+    </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+        <!-- <div w3-include-html="footer.html"></div> -->
+    <script>function loadNavbarAndFooter() {
+        var xhrFooter = new XMLHttpRequest();
+        xhrFooter.open("GET", "footer1.html", true);
+        xhrFooter.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("footer-placeholder").innerHTML = this.responseText;
+            }
+        };
+        xhrFooter.send();
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        loadNavbarAndFooter();
+    });</script>
+
+</html>

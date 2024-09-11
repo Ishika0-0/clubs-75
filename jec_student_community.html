@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jec student committee</title>
+    <link rel="stylesheet" href ="style_for_pages.css"></style>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <div class="navbar">
+        <a href="index.html" target="blank">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#activity">Activity</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/search" method="GET">
+              <input type="text" name="query" class="search-input" placeholder="Search...">
+              <span class="search-icon"></span>  
+            </form>
+          </div>
+
+    </div>
+<br><br>
+        <div class="head">
+            <h2> JEC Student Committee</h2>
+        </div>
+        <div class ="img">
+    <img src = "jsc logo.jpg" height="300" width="300" >
+    </div>
+        <div class=content id="about">
+        <P>Welcome to the JEC Student Committee, the heartbeat of student life at Jabalpur Engineering College (JEC). As the premier student-led organization on campus, we are dedicated to enhancing the overall student experience and fostering a vibrant community of learning, growth, and innovation.
+
+            At JEC Student Committee, we believe in the power of student leadership and collaboration to drive positive change and enrich the lives of our fellow students. Our committee comprises passionate and dedicated individuals who are committed to serving the student body and making a difference in the JEC community.
+            Through a wide range of activities, events, and initiatives, we strive to cater to the diverse interests and needs of our students. From organizing cultural festivals, technical competitions, and sports tournaments to hosting workshops, seminars, and guest lectures, we aim to provide opportunities for students to explore their passions, develop new skills, and create lasting memories.
+        </P>
+            <br>
+           </div>
+    <div class="content" id="team">
+        <h2>Our Club Members </h2>
+        <ol>
+            <h3>
+            <li>Soumya Agrawal</li>
+            <li>Kishita Patel</li>
+            <li>Harshita Kulchandani</li>
+            <li>Rahul barve</li>
+            <li>Shreya Gupta</li>
+            <li>Harsh Ahirwar</li>
+            <li>Drishti Rana</li>
+            <li>Rashi Gotiya</li>
+            
+        </h3>
+            <!-- Add more names as needed -->
+          </ol>
+          
+    </div>
+    <div class="act" id="activity">
+        <h2>Activities</h2>
+        <div class="block">
+            <img src="jsc 1.jpg" height="100" width ="100" alt="">
+            <img src="jsc6.jpg" alt="">
+            <img src="jsc5.jpg" alt="">
+            <img src="jsc2.jpg" alt="">
+        </div>
+    </div>
+    <div class="more">
+        <h3>Join Us:<br>
+            "Come be a part of our vibrant community and let your imagination soar!"</h3>
+        <div class="s">
+            <img src="instra logo.jpeg" alt="">
+            <a  href ="https://www.instagram.com/jecsc_official?igsh=OWE5OXMwcW80emIz" target="blank ">Jec student committee </a>
+          </div>  
+          <br>
+          
+    </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+        <!-- <div w3-include-html="footer.html"></div> -->
+    <script>function loadNavbarAndFooter() {
+        var xhrFooter = new XMLHttpRequest();
+        xhrFooter.open("GET", "footer1.html", true);
+        xhrFooter.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("footer-placeholder").innerHTML = this.responseText;
+            }
+        };
+        xhrFooter.send();
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        loadNavbarAndFooter();
+    });</script>
+</html>

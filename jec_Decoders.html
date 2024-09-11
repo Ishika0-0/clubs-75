@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoders Jec</title>
+    <link rel="stylesheet" href ="style_for_pages.css"></style>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <div class="navbar">
+        <a href="index.html" target="blank">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#activity">Activity</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/search" method="GET">
+              <input type="text" name="query" class="search-input" placeholder="Search...">
+              <span class="search-icon"></span>  
+            </form>
+          </div>
+
+    </div>
+<br><br>
+        <div class="head">
+            <h2> D'coders</h2>
+        </div>
+        <div class ="img">
+    <img src = "D'coders logo.jpg" height="300" width="300" >
+    </div>
+        <div class=content id="about">
+        <P>Welcome to D'Coders JEC, where creativity meets innovation and passion drives progress. As a dynamic platform dedicated to eliciting and promoting the skills of students, we are committed to empowering the next generation of leaders, innovators, and problem-solvers at Jabalpur Engineering College (JEC).
+
+            At D'Coders JEC, we believe in the power of technology and creativity to transform ideas into reality and make a positive impact on the world around us. Our community comprises driven and enthusiastic students who are passionate about coding, technology, and innovation.
+            Whether you're a seasoned coder or just beginning your journey into the world of technology, D'Coders JEC offers a supportive and inclusive environment where you can learn, grow, and thrive.
+            We are committed to fostering a culture of continuous learning, creativity, and excellence, where every student has the opportunity to unleash their full potential and pursue their passions. Together, we can push the boundaries of what's possible and create a brighter future for ourselves and our community.
+        </P>
+            <br>
+           </div>
+    <div class="content" id="team">
+        <h2>Our Club Members </h2>
+        <ol>
+            <h3>
+            <li>Pranjal Garg
+            </li>
+            <li>Navdeep sing solanki</li>
+            <li>Harsh Nigam</li>
+            <li>Ayush Sing</li>
+            <li>Diksha Singh</li>
+            <li>Aniket 
+                Singh
+            </li>
+            <li>Lokesh Khare</li>
+            <li>Aniket Nema</li>
+            
+        </h3>
+            <!-- Add more names as needed -->
+          </ol>
+          
+    </div>
+    <div class="act" id="activity">
+        <h2>Activities</h2>
+        <div class="block">
+            <img src="D'coders1.jpg" height="100" width ="100" alt="">
+            <img src="D'coders2.jpg" alt="">
+            <img src="D'coders3.jpg" alt="">
+            <img src="D'coders4.jpg" alt="">
+        </div>
+    </div>
+    <div class="more">
+        <h3>Join Us:<br>
+            "Join us at D'Coders JEC and be part of a movement that's shaping the future of technology and empowering students to turn their dreams into reality. Together, let's code, innovate, and inspire! "</h3>
+        <div class="s">
+            <img src="instra logo.jpeg" alt="">
+            <a  href ="https://www.instagram.com/d_coders_jec?igsh=MThvYm11eDVnbXVtcA==" target="blank ">D'coders</a>
+          </div>  
+          <br>
+          
+    </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+        <!-- <div w3-include-html="footer.html"></div> -->
+    <script>function loadNavbarAndFooter() {
+        var xhrFooter = new XMLHttpRequest();
+        xhrFooter.open("GET", "footer1.html", true);
+        xhrFooter.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("footer-placeholder").innerHTML = this.responseText;
+            }
+        };
+        xhrFooter.send();
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        loadNavbarAndFooter();
+    });</script>
+</html>

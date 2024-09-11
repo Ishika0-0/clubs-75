@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaarwaan Jec</title>
+    <link rel="stylesheet" href ="style_for_pages.css"></style>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <div class="navbar">
+        <a href="index.html" target="blank">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#activity">Activity</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/search" method="GET">
+              <input type="text" name="query" class="search-input" placeholder="Search...">
+              <span class="search-icon"></span>  
+            </form>
+          </div>
+
+    </div>
+<br><br>
+        <div class="head">
+            <h2>KAARWAAN</h2>
+        </div>
+        <div class ="img">
+    <img src = "kaarwaan.jpg" height="300" width="300" >
+    </div>
+        <div class=content id="about">
+        <P>Kaarwaa.N... is a non-government orgranisation founded by Jabalpur Engineering College (JEC), Jabalpur students who are committed to work for poor, underprivileged, downtrodden and unaware, with the primary aim to teach students for JNV(Jawahar Navodaya Vidyalaya) Entrance Exam and promote ‘girls education’. Through different activities we try to address different issues like education, health and hygiene, environmental issues, government scheme and plans, livelihood and community issues.
+            It is our empathy, the realisation that being citizens of this country, it is our responsibility to take the step for the welfare of another India.
+        </P>
+            <br>
+           </div>
+   
+    </div>
+    <div class="more">
+        <h3>To Know us more visit our website <a href= "https://kaarwaan.github.io/?fbclid=PAAaZMMmEKvexm7y_chhL7c5MgouIxh4klt4-5kUdTRdF-T8Yh3fFSU0DA7oc" target= "blank">Kaarwaan jec</a>
+           </h3>
+           
+
+        <div class="s">
+            <img src="instra logo.jpeg" alt="">
+            <a  href ="https://www.instagram.com/kaarwaa.n/" target="blank ">Kaarwaan jec</a>
+          </div>  
+          <br>
+          
+    </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+        <!-- <div w3-include-html="footer.html"></div> -->
+        <div id="footer-placeholder"></div>
+        <script src="script.js"></script>
+</html>

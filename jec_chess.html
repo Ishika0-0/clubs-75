@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jec Chess Club</title>
+    <link rel="stylesheet" href ="style_for_pages.css"></style>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <div class="navbar">
+        <a href="index.html" target="blank">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#activity">Activity</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/search" method="GET">
+              <input type="text" name="query" class="search-input" placeholder="Search...">
+              <span class="search-icon"></span>  
+            </form>
+          </div>
+
+    </div>
+
+    <!-- <div class = "title"><a href="index.html"><img src="home_FILL0_wght400_GRAD0_opsz24.png" alt="Home Icon"></div> -->
+    <!-- <div ><a href="C:\Users\patid\Downloads\6th sem\CLUBS~jec-20240402T224911Z-001\CLUBS~jec\index.html"></div> -->
+        <br><br>
+        <div class="head">
+            <h2>Jec Chess Club</h2>
+        </div>
+        <div class ="img">
+    <img src = "jec chess logo.jpg" height="300" width="300" >
+    </div>
+        <div class=content id="about">
+        <P>JEC Chess Club: Cultivating Minds, Forging Strategies
+            The JEC Chess Club stands as a bastion of strategic thinking and intellectual camaraderie within Jabalpur Engineering College (JEC).Our Mission:
+            At the JEC Chess Club, our mission is twofold: to nurture chess enthusiasts and to elevate the game's status as a respected discipline within our academic community. Through a combination of regular practice sessions, competitive tournaments, and educational workshops.<br><br> Whether you're a seasoned chess player or a novice eager to learn, the JEC Chess Club welcomes you with open arms. Join us to explore the depths of this timeless game, forge lasting friendships, and become part of a vibrant chess community at Jabalpur Engineering College.
+            <br> <br>&nbsp;&nbsp;
+            &QUOT;Struggle of pawn leads to queen one day, so just stay focused and play chess.&QUOT;</p></div>
+    <div class="content" id="team">
+        <h2>Jec Chess Players </h2>
+        <ol>
+            <h3><li>Sachi</li>
+            <li>Anish Shrivastava</li>
+            <li>Shivam Sing </li>
+            <li>Aman devaliya</li>
+            <li>Sudhanshu Tiwari</li>
+            <li>Ankit</li>
+            <li>Shivani Patidar</li>
+            <li>Shreyash Pawar</li>
+            <li>Abhinav Shrivas</li>
+            <li>Ruchi</li>
+            <li>Anshika Jain</li>
+            <li>Harshita Sahu</li>
+        </h3>
+            <!-- Add more names as needed -->
+          </ol>
+          
+    </div>
+    <div class="act" id="activity">
+        <h2>Activities</h2>
+        <div class="block">
+            <img src="jc1.jpg" height="100" width ="100" alt="">
+            <img src="jc2.jpg" alt="">
+            <img src="jc3.jpg" alt="">
+            <img src="aa4.jpg" alt="">
+        </div>
+    </div>
+    <div class="more">
+        <h3>Follow us for more...</h3>
+        <div class="s">
+            <img src="instra logo.jpeg" alt="">
+            <a  href ="https://www.instagram.com/jec_chess_club?igsh=MWFpd2tvazEzdjAzbQ==" target="blank ">Jec Chess club </a>
+          </div>  
+          <br>
+          <div class="s"></div><img src="whatsapp logo.jpeg" alt="">
+            <a href="https://chat.whatsapp.com/JsqH3mqjuR69SNtjTF18yz"  target="blank">jec chess club</a>
+        </div>
+    </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+        <!-- <div w3-include-html="footer.html"></div> -->
+    <script>function loadNavbarAndFooter() {
+        var xhrFooter = new XMLHttpRequest();
+        xhrFooter.open("GET", "footer1.html", true);
+        xhrFooter.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("footer-placeholder").innerHTML = this.responseText;
+            }
+        };
+        xhrFooter.send();
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        loadNavbarAndFooter();
+    });</script>
+
+</html>

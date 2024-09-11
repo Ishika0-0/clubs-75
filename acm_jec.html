@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACM Jec</title>
+    <link rel="stylesheet" href ="style_for_pages.css"></style>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <div class="navbar">
+        <a href="index.html" target="blank">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#activity">Activity</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/search" method="GET">
+              <input type="text" name="query" class="search-input" placeholder="Search...">
+              <span class="search-icon"></span>  
+            </form>
+          </div>
+
+    </div>
+<br><br>
+        <div class="head">
+            <h2>ACM JEC</h2>
+        </div>
+        <div class ="img">
+    <img src = "acm.jpg" height="300" width="300" >
+    </div>
+        <div class=content id="about">
+        <P>ACM at Jabalpur Engineering College brings together computing educators, researchers, and professionals to inspire dialogue, share resources, and address the field's challenges.
+
+            As the world’s largest computing society, ACM strengthens the profession's collective voice through strong leadership, promotion of the highest standards, and recognition of technical excellence. ACM supports the professional growth of its members by providing opportunities for life‐long learning, career development, and professional networking.
+        </P>
+            <br>
+           </div>
+    <div class=content id="about" >
+        
+            <h4 style = "text-align: center;
+            padding-left=0">
+                JEC ACM Student Chapter
+                offers a strong platform for
+                the students who wish to
+                make a promising career in
+                the computer science & IT
+                industry.
+            
+        </h4>
+            <!-- Add more names as needed -->
+          </ol>
+          
+    </div>
+    
+    </div>
+    <div class="more">
+        <h3>To Know us more visit our website <a href= "https://jecjabalpur.acm.org/" target= "blank">ACM jec</a>
+           </h3>
+           
+
+        <div class="s">
+            <img src="instra logo.jpeg" alt="">
+            <a  href ="https://www.instagram.com/acmjec/" target="blank ">ACM jec</a>
+          </div>  
+          <br>
+          
+    </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+    <div id="footer-placeholder"></div>
+    <script src="script.js"></script>
+</html>
